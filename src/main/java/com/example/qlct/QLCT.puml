@@ -1,0 +1,13 @@
+@startuml
+actor Người_dùng as User
+boundary Giao_diện_người_dùng as UI
+control Hệ_thống_xử_lý as System
+database Cơ_sở_dữ_liệu as DB
+
+User -> UI: Yêu cầu xem báo cáo chi tiêu
+UI -> System: Gửi yêu cầu xem báo cáo
+System -> DB: Lấy dữ liệu chi tiêu
+DB --> System: Trả về dữ liệu chi tiêu
+System -> System: Tính toán và tổng hợp báo cáo
+System -> UI: Hiển thị báo cáo chi tiêu dưới dạng biểu đồ
+@enduml

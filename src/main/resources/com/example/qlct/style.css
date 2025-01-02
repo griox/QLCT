@@ -1,0 +1,116 @@
+/* File: styles.css */
+
+
+/* General Styles */
+.root {
+    -fx-font-family: "Arial";
+    -fx-font-size: 14px;
+    -fx-background-color: #f7f7f7;
+}
+
+.label {
+    -fx-text-fill: #333333;
+    -fx-font-weight: bold;
+}
+
+/* TextField Styles */
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: #dcdcdc;
+    -fx-border-radius: 5;
+    -fx-padding: 5;
+}
+
+/* Button Styles */
+.button {
+    -fx-background-color: #e7e7e7;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5;
+    -fx-text-fill: #333333;
+    -fx-font-weight: bold;
+    -fx-padding: 8 15;
+}
+
+.button:hover {
+    -fx-background-color: #dddddd;
+}
+
+.button:pressed {
+    -fx-background-color: #cccccc;
+}
+
+/* Action Button (Nhập khoản chi) */
+.button.orange {
+    -fx-background-color: #ff9800;
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+    -fx-border-radius: 5;
+}
+
+.button.orange:hover {
+    -fx-background-color: #f57c00;
+}
+
+.button.orange:pressed {
+    -fx-background-color: #e65100;
+}
+
+/* ToggleButton Styles */
+.toggle-button {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5;
+    -fx-text-fill: #333333;
+    -fx-padding: 8 15;
+}
+
+.toggle-button:selected {
+    -fx-background-color: #f3895f;
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+}
+
+.toggle-button:hover {
+    -fx-background-color: #f3895f;
+}
+
+.toggle-button:pressed {
+    -fx-background-color: #F3895FFF
+}
+
+/* DatePicker Styles */
+.date-picker {
+    -fx-border-color: #dcdcdc;
+    -fx-border-radius: 5;
+    -fx-background-color: white;
+}
+
+/* FlowPane Button Alignment */
+.flow-pane .button {
+    -fx-pref-width: 120;
+    -fx-border-color: none!important;
+}
+/* Đặt hiệu ứng hover cho button trong FlowPane */
+.flow-pane .button {
+    -fx-transition: transform 0.2s ease;  /* Thêm chuyển động mượt mà */
+}
+.flow-pane .button-active {
+    -fx-transition: transform 0.2s ease;  /* Thêm chuyển động mượt mà */
+}
+
+.Button{
+    -fx-border-radius: 0.5;
+}
+
+
+/* GridPane Spacing */
+.grid-pane {
+    -fx-hgap: 10;
+    -fx-vgap: 10;
+    -fx-padding: 10;
+}
+.button:focused {
+    -fx-background-color: #ffcc80; /* Màu khi nhấn */
+    -fx-border-color: #ff9800;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0.5, 0, 1);
+}

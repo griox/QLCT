@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="540.0" prefWidth="433.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.qlct.lichSuController">
+    <children>
+        <!-- Date Picker -->
+        <DatePicker fx:id="datePicker" layoutX="95.0" layoutY="23.0" prefHeight="48.0" prefWidth="243.0" />
+
+        <!-- Include Footer Layout -->
+        <fx:include source="footlayout.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <ListView fx:id="listView" layoutX="10.0" layoutY="146.0" prefHeight="320.0" prefWidth="414.0" />
+      <Label layoutX="23.0" layoutY="88.0" text="Thu nhập" />
+      <Label layoutX="187.0" layoutY="88.0" text="Chi tiêu" />
+      <Label layoutX="338.0" layoutY="88.0" text="Tổng" />
+      <Text fx:id="txtThuNhap" fill="#0e9a34" layoutX="23.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0"  wrappingWidth="89.2275390625">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtChiTieu" fill="#a1250f" layoutX="172.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0"  wrappingWidth="89.2275390625">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtTongKet" fill="#0b4494" layoutX="310.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="89.2275390625">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>
